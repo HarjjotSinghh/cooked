@@ -9,6 +9,7 @@ Install and use **`/cooked`** on any coding agent that supports [Agent Skills](h
 | [**One-command install**](./install.md) | You want `npx skills` and you're done |
 | [**All agents matrix**](./all-agents.md) | You need the exact path for any of 70+ agents |
 | [**Agent guides**](./agents/) | Your harness needs a special invoke or adapter |
+| [**Distribution**](./distribution.md) | Launch posts, skills.sh, social checklist |
 
 ## Major agents (deep guides)
 

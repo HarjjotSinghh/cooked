@@ -1,5 +1,7 @@
 # cooked
 
+[![skills.sh](https://skills.sh/b/HarjjotSinghh/cooked)](https://skills.sh/HarjjotSinghh/cooked)
+
 > Did you cook, are you still cooking, or are you cooked?
 
 A [Matt Pocock](https://github.com/mattpocock/skills)-style skill for coding agents. Run it **after** a feature is "done" — not before.
@@ -178,6 +180,18 @@ Follows the open [Agent Skills specification](https://agentskills.io/specificati
 ## Contributing
 
 PRs welcome. Keep the skill short. If a change makes the agent dump a backlog or invent chores, reject it.
+
+## Distribution
+
+Launch copy, X/HN/Reddit posts, and the screenshot pair live in:
+
+- [`docs/distribution.md`](./docs/distribution.md) — channels + checklist  
+- [`examples/launch-post.md`](./examples/launch-post.md) — paste-ready posts  
+- [`examples/before-after.md`](./examples/before-after.md) — the contrast that sells it  
+
+```bash
+npx skills add HarjjotSinghh/cooked --skill cooked -g
+```
 
 ## License
 
