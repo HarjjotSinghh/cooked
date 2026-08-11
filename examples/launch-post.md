@@ -1,6 +1,18 @@
 # Launch post — copy / paste
 
+**Always attach the share card first:**
+
+```text
+assets/og-card.png
+```
+
+Raw: https://raw.githubusercontent.com/HarjjotSinghh/cooked/main/assets/og-card.png
+
+---
+
 ## X / Twitter (primary)
+
+Attach `og-card.png`, then:
 
 ```text
 Ask any coding agent "what's next?" after a feature ships.
@@ -40,6 +52,8 @@ https://github.com/HarjjotSinghh/cooked
 ```
 
 ## Reply / second post (attach screenshots)
+
+Primary tweet already has `og-card.png`. For a thread reply:
 
 Screenshot 1: the slop list from [before-after.md](./before-after.md) **Before** block.  
 Screenshot 2: the **After** `/cooked` report from the same file.

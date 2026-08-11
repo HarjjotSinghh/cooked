@@ -2,6 +2,10 @@
 
 [![skills.sh](https://skills.sh/b/HarjjotSinghh/cooked)](https://skills.sh/HarjjotSinghh/cooked)
 
+<p align="center">
+  <img src="./assets/og-card.png" alt="cooked — Prove the work is actually done. Post-work audit skill for coding agents." width="100%" />
+</p>
+
 > Did you cook, are you still cooking, or are you cooked?
 
 A [Matt Pocock](https://github.com/mattpocock/skills)-style skill for coding agents. Run it **after** a feature is "done" — not before.
@@ -155,11 +159,12 @@ That contrast *is* the pitch. Screenshot both. Ship the post.
 cooked/
 ├── skills/cooked/SKILL.md     # canonical skill (Agent Skills spec)
 ├── adapters/                  # slash-command ports for non-skill agents
+├── assets/og-card.png         # share / OG image (default)
 ├── docs/                      # install + per-agent guides (70+ agents)
 │   ├── install.md
 │   ├── all-agents.md
 │   └── agents/
-├── examples/                  # sample before/after outputs
+├── examples/                  # sample before/after + launch posts
 ├── LICENSE
 └── README.md
 ```
@@ -183,11 +188,18 @@ PRs welcome. Keep the skill short. If a change makes the agent dump a backlog or
 
 ## Distribution
 
-Launch copy, X/HN/Reddit posts, and the screenshot pair live in:
+**Share image (canonical):** [`assets/og-card.png`](./assets/og-card.png)
+
+```text
+https://raw.githubusercontent.com/HarjjotSinghh/cooked/main/assets/og-card.png
+```
+
+Launch copy, X/HN/Reddit posts, and the screenshot pair:
 
 - [`docs/distribution.md`](./docs/distribution.md) — channels + checklist  
-- [`examples/launch-post.md`](./examples/launch-post.md) — paste-ready posts  
+- [`examples/launch-post.md`](./examples/launch-post.md) — paste-ready posts (attach `og-card.png`)  
 - [`examples/before-after.md`](./examples/before-after.md) — the contrast that sells it  
+- [`assets/README.md`](./assets/README.md) — OG variants  
 
 ```bash
 npx skills add HarjjotSinghh/cooked --skill cooked -g

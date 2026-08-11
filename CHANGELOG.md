@@ -7,6 +7,7 @@
 - Per-agent guides: Claude Code, Codex, Cursor, OpenCode, Gemini CLI, GitHub Copilot, Pi, Grok Build, Windsurf, Cline, Continue, Amp/Replit, Goose, Roo Code, Antigravity, OpenClaw
 - Align `skills/cooked/SKILL.md` metadata `version` to `1.1.0`
 - Distribution kit: launch posts, OG card, skills.sh badge, GitHub topics + Release `v1.1.0`
+- Canonical share image (`assets/og-card.png` = v3 framed) on README, release asset, launch docs
 
 ## 1.0.0 — 2026-08-11
 
