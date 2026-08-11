@@ -6,6 +6,7 @@ This repository is a single portable agent skill: **`cooked`**.
 
 - `skills/cooked/SKILL.md` — canonical skill (Agent Skills spec). Edit this first.
 - `adapters/` — slash-command ports. Keep them in sync with the skill's core rules when the skill changes.
+- `docs/` — install + per-agent guides. Update paths when the skills CLI agent matrix changes.
 - `examples/` — sample outputs for docs and launch posts. Not loaded by agents.
 
 ## Rules for changing the skill

@@ -32,29 +32,51 @@ The double meaning is intentional. Ambiguity ships.
 
 ## Install
 
-Portable [Agent Skills](https://agentskills.io/specification) layout — one `SKILL.md`, many agents.
+Portable [Agent Skills](https://agentskills.io/specification) layout — one `SKILL.md`, **70+ agents**.
 
 ```bash
-# all supported agents, globally
+# all detected agents, globally
 npx skills add HarjjotSinghh/cooked --skill cooked -g
 
-# or pick agents
-npx skills add HarjjotSinghh/cooked --skill cooked -a claude-code -a codex -a opencode -a cursor
+# every agent the CLI knows about
+npx skills add HarjjotSinghh/cooked --skill cooked --agent '*' -g -y
+
+# pick agents
+npx skills add HarjjotSinghh/cooked --skill cooked \
+  -a claude-code -a codex -a cursor -a opencode -a gemini-cli \
+  -a github-copilot -a pi -a grok -a windsurf -g
 ```
 
 Then say `cooked`, `/cooked`, `did I cook`, or `am I cooked` when you're done with something.
 
-### Manual install
+### Per-agent guides
 
-| Agent | Path |
+Full docs live under **[`docs/`](./docs/)**:
+
+| | |
 |---|---|
-| Claude Code (skill) | `.claude/skills/cooked/SKILL.md` or `~/.claude/skills/cooked/SKILL.md` |
-| Claude Code (command) | `.claude/commands/cooked.md` ← copy from `adapters/cooked.claude-command.md` |
-| Codex (skill) | `~/.codex/skills/cooked/SKILL.md` |
-| Codex (prompt fallback) | `~/.codex/prompts/cooked.md` ← copy from `adapters/cooked.codex.md` |
-| OpenCode | `.opencode/command/cooked.md` ← copy from `adapters/command.md` |
-| Gemini CLI | `~/.gemini/commands/cooked.toml` ← copy from `adapters/cooked.toml`, then `/commands reload` |
-| Cursor / Copilot / others | drop `skills/cooked/` into the agent's skills directory |
+| [One-command install](./docs/install.md) | `npx skills` options, update, remove |
+| [All agents matrix](./docs/all-agents.md) | 70+ agents — `--agent` id + paths |
+| [Claude Code](./docs/agents/claude-code.md) · [Codex](./docs/agents/codex.md) · [Cursor](./docs/agents/cursor.md) | major harness guides |
+| [OpenCode](./docs/agents/opencode.md) · [Gemini CLI](./docs/agents/gemini-cli.md) · [Copilot](./docs/agents/github-copilot.md) | |
+| [Pi](./docs/agents/pi.md) · [Grok Build](./docs/agents/grok-build.md) · [Windsurf](./docs/agents/windsurf.md) | |
+| [Cline](./docs/agents/cline.md) · [Continue](./docs/agents/continue.md) · [Amp/Replit](./docs/agents/amp.md) | |
+| [Goose](./docs/agents/goose.md) · [Roo](./docs/agents/roo-code.md) · [Antigravity](./docs/agents/antigravity.md) · [OpenClaw](./docs/agents/openclaw.md) | |
+
+### Quick manual paths
+
+| Agent | Global skill path |
+|---|---|
+| Claude Code | `~/.claude/skills/cooked/` |
+| Codex | `~/.codex/skills/cooked/` |
+| Cursor | `~/.cursor/skills/cooked/` |
+| OpenCode | `~/.config/opencode/skills/cooked/` |
+| Gemini CLI | `~/.gemini/skills/cooked/` |
+| GitHub Copilot | `~/.copilot/skills/cooked/` |
+| Pi | `~/.pi/agent/skills/cooked/` |
+| Grok Build | `~/.grok/skills/cooked/` |
+
+Optional slash-command / TOML ports: [`adapters/`](./adapters/). Full table: [`docs/all-agents.md`](./docs/all-agents.md).
 
 ### From this repo
 
@@ -131,10 +153,10 @@ That contrast *is* the pitch. Screenshot both. Ship the post.
 cooked/
 ├── skills/cooked/SKILL.md     # canonical skill (Agent Skills spec)
 ├── adapters/                  # slash-command ports for non-skill agents
-│   ├── command.md             # generic / OpenCode
-│   ├── cooked.claude-command.md
-│   ├── cooked.codex.md
-│   └── cooked.toml            # Gemini CLI
+├── docs/                      # install + per-agent guides (70+ agents)
+│   ├── install.md
+│   ├── all-agents.md
+│   └── agents/
 ├── examples/                  # sample before/after outputs
 ├── LICENSE
 └── README.md
