@@ -10,7 +10,7 @@ How `/cooked` gets in front of people.
 | Release `v1.1.0` | live | https://github.com/HarjjotSinghh/cooked/releases/tag/v1.1.0 |
 | `npx skills` install | live | `npx skills add HarjjotSinghh/cooked --skill cooked -g` |
 | skills.sh listing | **live** | https://skills.sh/HarjjotSinghh/cooked |
-| OG card | live | [`assets/og-card.png`](../assets/og-card.png) |
+| OG card | live | [`assets/og-card.png`](../assets/og-card.png) · [all variants](../assets/README.md) |
 | X / Twitter | draft ready | paste from [launch-post.md](../examples/launch-post.md) |
 | Reddit / Discord / HN | optional | same before/after contrast |
 

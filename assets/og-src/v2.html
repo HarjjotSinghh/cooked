@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1200px; height: 630px; overflow: hidden;
+    font-family: Inter, -apple-system, system-ui, sans-serif;
+    background: #f7f3ea;
+    color: #111;
+    position: relative;
+  }
+  /* floating geometry */
+  .blob { position: absolute; border-radius: 28px; }
+  .b1 { width: 180px; height: 180px; background: #fdba74; right: -40px; top: -50px; opacity: 0.55; transform: rotate(18deg); }
+  .b2 { width: 120px; height: 120px; background: #fb923c; right: 140px; top: 40px; opacity: 0.35; transform: rotate(-12deg); }
+  .b3 { width: 200px; height: 90px; background: #1c1917; right: 20px; bottom: 40px; opacity: 0.9; transform: rotate(-8deg); border-radius: 20px; }
+  .b4 { width: 90px; height: 90px; background: #ea580c; right: 200px; bottom: 80px; opacity: 0.7; transform: rotate(22deg); }
+  .wrap { position: relative; z-index: 2; padding: 64px 72px; height: 100%; display: flex; flex-direction: column; }
+  .pill {
+    align-self: flex-start;
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #fff; border: 1px solid #e7e0d2; border-radius: 999px;
+    padding: 8px 14px; font-size: 13px; font-weight: 600; letter-spacing: 0.04em;
+    color: #57534e; text-transform: uppercase;
+  }
+  .pill i { width: 8px; height: 8px; border-radius: 50%; background: #f97316; display: block; }
+  h1 {
+    margin-top: 28px; font-size: 72px; font-weight: 800;
+    letter-spacing: -0.045em; line-height: 0.98; max-width: 720px;
+  }
+  h1 .acc { color: #ea580c; }
+  .sub {
+    margin-top: 24px; font-size: 22px; font-weight: 500; color: #57534e;
+    max-width: 560px; line-height: 1.45;
+  }
+  .stats {
+    margin-top: 28px; display: flex; gap: 28px; font-size: 15px; font-weight: 600; color: #292524;
+  }
+  .stats span { color: #ea580c; }
+  .stats em { font-style: normal; color: #a8a29e; font-weight: 500; margin: 0 10px; }
+  .panel {
+    margin-top: auto; width: 640px;
+    background: #fffef9; border: 1.5px solid #e7e0d2; border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(28,25,23,0.08);
+    padding: 20px 22px 18px;
+  }
+  .panel-top {
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: "JetBrains Mono", monospace; font-size: 13px; color: #78716c; margin-bottom: 14px;
+  }
+  .verdict { font-size: 18px; font-weight: 700; color: #b45309; }
+  .finding {
+    margin-top: 10px; font-family: "JetBrains Mono", monospace; font-size: 14px; color: #44403c;
+  }
+  .finding path { color: #a8a29e; }
+  .next {
+    margin-top: 14px; padding-top: 12px; border-top: 1px solid #f0ebe0;
+    font-size: 15px; font-weight: 600; color: #1c1917;
+  }
+  .next span { color: #ea580c; }
+</style>
+</head>
+<body>
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+  <div class="blob b4"></div>
+  <div class="wrap">
+    <div class="pill"><i></i> Agent skill · post-ship</div>
+    <h1>Feature shipped.<br><span class="acc">Actually done?</span></h1>
+    <p class="sub">Evidence-only audit after agent work. Cite a file:line or stay quiet. One next move — not a backlog.</p>
+    <div class="stats">
+      <div><span>6</span> sweeps</div><em>·</em>
+      <div><span>1</span> next action</div><em>·</em>
+      <div><span>70+</span> agents</div>
+    </div>
+    <div class="panel">
+      <div class="panel-top"><span>/cooked</span><span>read-only</span></div>
+      <div class="verdict">Still cooking.</div>
+      <div class="finding">BLOCKING · webhook never wired<br><path>src/billing/webhook.ts:14</path></div>
+      <div class="next"><span>→ Next</span>&nbsp;&nbsp;Wire checkout → webhook · Finish</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1200px; height: 630px; overflow: hidden;
+    font-family: Inter, -apple-system, system-ui, sans-serif;
+    background: radial-gradient(900px 500px at 85% 15%, #2a2420 0%, #0c0a09 60%);
+    color: #fafaf9;
+    position: relative;
+  }
+  .wrap { position: relative; z-index: 2; padding: 64px 72px; height: 100%; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; }
+  .left { display: flex; flex-direction: column; }
+  .eyebrow {
+    font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #a8a29e;
+  }
+  h1 {
+    margin-top: 20px; font-size: 56px; font-weight: 800;
+    letter-spacing: -0.04em; line-height: 1.05;
+  }
+  h1 em { font-style: normal; color: #fb923c; }
+  .sub {
+    margin-top: 22px; font-size: 20px; font-weight: 500; color: #a8a29e;
+    line-height: 1.45; max-width: 460px;
+  }
+  .cmd {
+    margin-top: auto;
+    font-family: "JetBrains Mono", monospace; font-size: 15px; font-weight: 500;
+    color: #e7e5e4; background: #1c1917; border: 1px solid #292524;
+    border-radius: 12px; padding: 16px 18px; width: fit-content;
+  }
+  .cmd span { color: #fb923c; }
+  .right { display: flex; flex-direction: column; justify-content: center; gap: 14px; }
+  .vcard {
+    border-radius: 16px; border: 1px solid #292524; background: rgba(28,25,23,0.85);
+    padding: 20px 22px; backdrop-filter: blur(8px);
+  }
+  .vcard .k {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .vcard .t { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; }
+  .vcard .d { margin-top: 6px; font-size: 14px; color: #a8a29e; font-weight: 500; }
+  .v1 .k, .v1 .t { color: #4ade80; }
+  .v2 .k, .v2 .t { color: #fbbf24; }
+  .v3 .k, .v3 .t { color: #f87171; }
+  .v1 { border-color: rgba(74,222,128,0.25); }
+  .v2 { border-color: rgba(251,191,36,0.25); }
+  .v3 { border-color: rgba(248,113,113,0.25); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="left">
+      <div class="eyebrow">/cooked · agent skill</div>
+      <h1>What is left<br>after <em>“done”</em>?</h1>
+      <p class="sub">Silently dropped requirements. Dead wiring. Ship blockers. Every claim cited — or omitted.</p>
+      <div class="cmd"><span>$</span> npx skills add HarjjotSinghh/cooked -g</div>
+    </div>
+    <div class="right">
+      <div class="vcard v1">
+        <div class="k">Verdict</div>
+        <div class="t">You cooked.</div>
+        <div class="d">Verified. Ship it — or stop.</div>
+      </div>
+      <div class="vcard v2">
+        <div class="k">Verdict</div>
+        <div class="t">Still cooking.</div>
+        <div class="d">Unfinished, unwired, or not live.</div>
+      </div>
+      <div class="vcard v3">
+        <div class="k">Verdict</div>
+        <div class="t">You're cooked.</div>
+        <div class="d">Material bug or production risk.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

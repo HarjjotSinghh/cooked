@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1200px; height: 630px; overflow: hidden;
+    font-family: Inter, -apple-system, system-ui, sans-serif;
+    background: #f3f0e8;
+    color: #1a1814;
+    position: relative;
+  }
+  .accent { position: absolute; left: 0; top: 0; width: 10px; height: 100%; background: #f97316; }
+  .floor {
+    position: absolute; left: 0; right: 0; bottom: 0; height: 240px;
+    background: #e8e2d4;
+    border-top: 1.5px solid #d6cfc0;
+  }
+  .content { position: relative; z-index: 2; padding: 72px 72px 56px; height: 100%; display: flex; flex-direction: column; }
+  .brand { display: flex; align-items: center; gap: 18px; }
+  .mark {
+    width: 72px; height: 72px; border-radius: 18px; background: #1a1814;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 24px rgba(26,24,20,0.12);
+  }
+  .mark svg { width: 38px; height: 38px; }
+  .word { font-size: 48px; font-weight: 800; letter-spacing: -0.045em; line-height: 1; }
+  .tagline {
+    margin-top: 36px; font-size: 28px; font-weight: 600; color: #4a453c;
+    letter-spacing: -0.02em; max-width: 560px; line-height: 1.25;
+  }
+  .chips {
+    margin-top: 28px; display: flex; gap: 10px; flex-wrap: wrap;
+  }
+  .chip {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 14px; font-weight: 500; color: #5c564c;
+    background: rgba(255,255,255,0.55); border: 1px solid #d6cfc0;
+    padding: 8px 14px; border-radius: 999px;
+  }
+  .foot {
+    margin-top: auto; font-family: "JetBrains Mono", monospace;
+    font-size: 15px; font-weight: 500; color: #6b6458;
+  }
+  /* illustration — stacked report cards */
+  .art {
+    position: absolute; right: 80px; bottom: 70px; width: 380px; height: 320px;
+    z-index: 3;
+  }
+  .card {
+    position: absolute; width: 280px; border-radius: 14px;
+    border: 2.5px solid #1a1814; background: #fffdf8;
+    box-shadow: 8px 10px 0 rgba(26,24,20,0.08);
+    padding: 18px 20px;
+  }
+  .card.back { right: 0; top: 20px; transform: rotate(6deg); background: #fff7ed; }
+  .card.mid { right: 30px; top: 70px; transform: rotate(2deg); background: #fefce8; }
+  .card.front { right: 55px; top: 130px; transform: rotate(-3deg); }
+  .badge {
+    display: inline-block; font-size: 12px; font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 4px 10px; border-radius: 6px; margin-bottom: 10px;
+  }
+  .b-green { background: #dcfce7; color: #166534; }
+  .b-amber { background: #fef3c7; color: #92400e; }
+  .b-red { background: #fee2e2; color: #991b1b; }
+  .line { height: 8px; border-radius: 4px; background: #e7e5e4; margin-top: 8px; }
+  .line.w1 { width: 72%; } .line.w2 { width: 48%; } .line.w3 { width: 88%; }
+  .line.hi { background: #fdba74; }
+</style>
+</head>
+<body>
+  <div class="accent"></div>
+  <div class="floor"></div>
+  <div class="content">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none">
+          <path d="M10 22c0-6 4.5-10 10-10s10 4 10 10" stroke="#f97316" stroke-width="3" stroke-linecap="round"/>
+          <path d="M14 22h12" stroke="#fafaf9" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M16 26h8" stroke="#fafaf9" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M18 30h4" stroke="#fafaf9" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="20" cy="12" r="2.5" fill="#f97316"/>
+        </svg>
+      </div>
+      <div class="word">cooked</div>
+    </div>
+    <div class="tagline">Post-work audit for coding agents</div>
+    <div class="chips">
+      <span class="chip">evidence-only</span>
+      <span class="chip">one next move</span>
+      <span class="chip">no invented chores</span>
+    </div>
+    <div class="foot">github.com/HarjjotSinghh/cooked  ·  /cooked</div>
+  </div>
+  <div class="art" aria-hidden="true">
+    <div class="card back">
+      <span class="badge b-green">You cooked</span>
+      <div class="line w3"></div><div class="line w2"></div>
+    </div>
+    <div class="card mid">
+      <span class="badge b-red">You're cooked</span>
+      <div class="line w1 hi"></div><div class="line w2"></div>
+    </div>
+    <div class="card front">
+      <span class="badge b-amber">Still cooking</span>
+      <div class="line w3 hi"></div><div class="line w1"></div>
+      <div class="line w2"></div>
+    </div>
+  </div>
+</body>
+</html>

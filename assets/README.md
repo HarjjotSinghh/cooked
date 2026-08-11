@@ -1,16 +1,15 @@
 # Share assets
 
-OG / social cards for `/cooked` (1200×630).
+Craft-level OG cards (1200×630 @2x), matched to brand quality from reinstate / moonshift / portfolio.
 
-| File | Direction | Headline idea |
+| File | Direction (reference DNA) | Headline |
 |---|---|---|
-| `og-v1-split.png` | Before/after product demo | Slop list vs evidenced report |
-| `og-v2-slash.png` | Command brand mark | **Prove the work is actually done.** |
-| `og-v3-stamps.png` | Inspector / pass-fail | **Three possible outcomes. No invented backlog.** |
-| `og-v4-terminal.png` | Live CLI session | Shows real output shape |
-| `og-card.png` | Default (copy of v2) | Used as primary share image |
-| `og-card.html` | Source for original v0 | Superseded by variants |
+| `og-v1-product.png` | Reinstate — brand + illustration | **Post-work audit for coding agents** |
+| `og-v2-marketing.png` | Moonshift — hero + product mock | **Feature shipped. Actually done?** |
+| `og-v3-framed.png` | Portfolio — hatch + corner card | **Prove the work is actually done.** |
+| `og-v4-verdicts.png` | Dark editorial product | **What is left after “done”?** |
+| `og-card.png` | **Default** (= v2) | Primary share / link preview |
 
-**Recommended default:** `og-v2-slash.png` — shortest explanation of *what* it is.
+Source HTML: `og-src/v{1-4}.html` (render via Playwright).
 
-**Best for the launch post contrast:** `og-v1-split.png` + code blocks from `examples/before-after.md`.
+**Recommended:** v2 for launch posts · v1 for product/brand · v3 for personal/portfolio tone · v4 for dark-mode / verdict explainer.
