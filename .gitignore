@@ -1,0 +1,13 @@
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.log
+node_modules/
+.skills.json
+skills-lock.json
+.env
+.env.*
+!.env.example
