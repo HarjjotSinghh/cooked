@@ -4,7 +4,7 @@ description: "Did you cook, are you still cooking, or are you cooked? Inspect co
 license: MIT
 metadata:
   author: HarjjotSinghh
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Cooked
